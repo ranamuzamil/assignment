@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
   <title>Deltify</title>
+
   <style>
     .bgcolorformain {
-      background-image: linear-gradient(120deg, #0F124D, #343a9c);
+      background-image: linear-gradient(120deg, rgba(120, 166, 236, 0.623), rgba(23, 23, 90, 0.432)), url('./images/bg.jpg');
+      background-size: cover;
       width: 100%;
     }
   </style>
@@ -20,9 +22,6 @@
 <body>
   <div class="bgcolorformain">
 
-
-
-    <!-- GKFYJASDHFKHFDSUHDS -->
     <header class="bg-inherit mx-20 py-10 items-center">
 
       <nav class="flex justify-between items-center w-[100%]">
@@ -31,8 +30,9 @@
           <a href="#"><img src="./images/Deltify.png" alt=""></a>
         </div>
 
-        <div class="nav-links duration-500 lg:static absolute max-lg:bg-gray-500 text-white lg:min-h-fit min-h-[100vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center max-lg:mt-[-38px] px-5">
-          
+        <div
+          class="nav-links duration-500 lg:static absolute max-lg:bg-gray-500 text-white lg:min-h-fit min-h-[100vh] left-0 top-[-100%] lg:w-auto  w-full flex items-center max-lg:mt-[-38px] px-5">
+
           <ul class="flex lg:flex-row flex-col lg:items-center lg:gap-[2vw] gap-8">
             <li><a class="hover:text-blue-300 font-bold" href="#active">HOME</a></li>
             <li><a class="hover:text-blue-300 hover:font-bold" href="#">ABOUT</a></li>
@@ -50,7 +50,7 @@
               href="">SAY&nbsp;HI</a></button>
           <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer lg:hidden"></ion-icon>
         </div>
-        
+
     </header>
 
 
@@ -133,8 +133,10 @@
 
   </div>
 
+  <!-- section-3 -->
 
-  <div class="flex max-lg:flex-wrap px-20 py-10 mt-10 gap-x-48 justify-between">
+  <div
+    class="flex bg-gradient-to-br  from-gray-50 to-gray-100 max-lg:flex-wrap px-20 py-10 mt-10 gap-x-48 justify-between">
     <div class="max-lg:w-[100%] w-[50%]">
       <img src="./images/main-3img.png" alt="">
     </div>
@@ -154,20 +156,152 @@
         <span> <img class="inline-flex" src="./images/correct-arrow.png" alt=""> Lorem, ipsum.</span>
       </div>
 
-      <button class="text-white bg-gradient-to-r from-yellow-600 mt-16 to-yellow-500 w-40 h-12 rounded-md">Read
+      <button
+        class="text-white bg-gradient-to-r from-yellow-600 mt-16 to-yellow-500 w-40 h-12 rounded-lg hover:text-yellow-700 hover:bg-gradient-to-r hover:from-gray-100 hover:to-gray-200">Read
         More</button>
     </div>
 
   </div>
 
+  <!-- section-4 -->
 
-  <div class="main-4">
-    <h5>Packages</h5>
-    <h2>Choose the package that's <span class="text-gradient-to-r from-yellow-600 to-yellow-400"> right for you! </span>
+  <div class="mt-28">
+    <h5 class="text-base flex w-[100%] justify-center">Packages</h5>
+    <h2 class="mt-5 font-sans text-lg font-bold flex w-[100%] justify-center capitalize">Choose the package that's
+      &nbsp;<span class="text-yellow-700"> right for you! </span>
     </h2>
-    <div class="grid grid-cols-3">
-      <div class="card"></div>
+    <div class="grid justify-around mt-10 mx-20 items-center max-lg:grid-cols-1 max-lg:gap-10 flex-wrap grid-cols-3">
+
+
+      <!-- card-1 -->
+
+
+      <div class="grid ml-10 p-4 w-[22rem] bg-fuchsia-50 border border-gray-200 rounded-3xl drop-shadow-lg ">
+        <div class="grid justify-center">
+          <span class="font-bold text-3xl italic ml-[1.6rem] text-blue-800"
+            style="font-family: Sofia, sans-serif;">Simplify</span>
+          <br>
+          <span class="ml-5 mb-4 text-5xl font-bold tracking-tight inline-block h-[3rem]"> <span
+              class="text-3xl font-semibold inline-block">$ </span> 299</span>
+          <p class="ml-5 capitalize text-gray-400">In this package</p>
+        </div>
+        <div class="grid ml-3 mt-10">
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> PREMIUM THEME</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> FREE BRANDED LOGO & BANNER</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> 5 TRENDING PRODUCTS</span>
+
+
+        </div>
+
+
+        <div class="grid justify-center mb-[2rem] mt-[12rem]">
+          <button type="button"
+            class="w-[10rem] h-[2.5rem] bg-inherit border-yellow-400 rounded-full border-2 hover:text-white hover:bg-gradient-to-br hover:from-yellow-500 hover:to-yellow-400">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- card-2 active -->
+      <div class="grid ml-10 p-4 w-[22rem] bg-blue-800 border border-blue-800 rounded-3xl drop-shadow-2xl">
+        <div class="grid justify-center">
+          <p class="ml-3 text-white">Most Popular</p>
+          <br>
+          <span class="font-bold text-yellow-500 text-3xl italic ml-[1.2rem]"
+            style="font-family: Sofia, sans-serif;">Blendify</span>
+          <br>
+          <span class="ml-5 mb-4 text-yellow-500 text-5xl font-bold tracking-tight inline-block h-[3rem]"> <span
+              class="text-3xl font-semibold inline-block">$ </span> 399</span>
+          <p class="ml-5 capitalize text-white">In this package</p>
+        </div>
+        <div class="grid ml-3 text-white mt-10">
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> PREMIUM THEME</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> FREE BRANDED LOGO & BANNER</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> PROFIT MAXIMIZATION APPS</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> 15 TOP SELLING PRODUCTS</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> SEO FRIENDY STORE</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> 1 FREE CODING TASK</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> 1 MONTH SUPPORT</span>
+        </div>
+
+
+
+        <div class="grid justify-center mb-[2rem] mt-[8rem]">
+          <button type="button"
+            class="w-[10rem] text-white h-[2.5rem] bg-gradient-to-br from-yellow-500 to-yellow-400 border-yellow-400 rounded-full border-2 hover:text-blue-800 hover:bg-gradient-to-br hover:from-yellow-50 hover:to-yellow-100">Buy
+            Now</button>
+        </div>
+      </div>
+      <!-- card-3 -->
+      <div class="grid ml-10 p-4 w-[22rem] bg-fuchsia-50 border border-gray-200 rounded-3xl drop-shadow-lg ">
+        <div class="grid justify-center">
+          <p class="text-yellow-400 ml-3">Recommended</p>
+          <br>
+          <span class="font-bold text-3xl italic ml-[1.6rem] text-blue-800"
+            style="font-family: Sofia, sans-serif;">Rockify</span>
+          <br>
+          <span class="ml-5 mb-4 text-5xl font-bold tracking-tight inline-block h-[3rem]"> <span
+              class="text-3xl font-semibold inline-block">$ </span> 499</span>
+          <p class="ml-5 capitalize text-gray-400">In this package</p>
+        </div>
+        <div class="grid mt-10">
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> UNIQUE PREMIUM DESIGNE</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> FREE BRANDED LOGO & BANNER</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> PSYCHOLOGICAL TRIGGERS</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOR MAXIMUM SALES
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> SKYROCKET SALES BOOSTING </span>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TECHNIQUES
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> OPTIMAL CONVERSION
+            OPTIMIZATION</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> PROFIT MAXIMIZATION APPS</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> 30 HOT SELLING PRODUCTS</span>
+          <span class="flex gap-5"><img src="./images/Vector 6.png" alt=""> 1 YEAR SUPPORT</span>
+
+
+        </div>
+
+
+        <div class="grid justify-center mb-[2rem] mt-[1rem]">
+          <button type="button"
+            class="w-[10rem] h-[2.5rem] bg-inherit border-yellow-400 rounded-full border-2 hover:text-white hover:bg-gradient-to-br hover:from-yellow-500 hover:to-yellow-400">Buy
+            Now</button>
+        </div>
+      </div>
+
+
+
+
     </div>
+  </div>
+
+  <!-- section-5 -->
+
+  <div
+    class="flex bg-gradient-to-br  from-gray-50 to-gray-100 max-lg:flex-wrap px-20 py-10 mt-10 gap-x-48 justify-between">
+
+    <div class="">
+      <h5 class="text-yellow-400">More we offer!</h5>
+      <h2 class="text-3xl font-bold py-5 pr-10 capitalize">Engaging video ads which will explode your <span
+          class="text-yellow-500">sales</span></h2>
+      <p class="text-gray-500">We offers whitening in a professional Solid Brush for fast, safe, and effective results
+        after 10 days.</p>
+      <h3 class="mt-[2rem] mx-10"><span class="text-yellow-500 text-3xl font-samibold"><iconify-icon
+            icon="cil:euro"></iconify-icon>65.00 EUR</span><del><iconify-icon icon="cil:euro"></iconify-icon>120.00
+          EUR</del></h3>
+      <div class="text-gray-400 flex flex-col gap-1 mt-5">
+        <p><ion-icon class="text-yellow-500" name="clipboard-outline"></ion-icon>&nbsp;&nbsp;2-minute timer with 30-second pulses
+        </p>
+        <p><ion-icon class="text-yellow-500" name="clipboard-outline"></ion-icon>&nbsp;&nbsp;Whiter Teeth In 10 Days</p>
+        <p><ion-icon class="text-yellow-500" name="clipboard-outline"></ion-icon>&nbsp;&nbsp;Waterproof & shower-safe</p>
+        
+        <button
+        class="text-white bg-gradient-to-r from-yellow-600 my-2 to-yellow-500 w-40 h-12 rounded-lg hover:text-yellow-700 hover:bg-gradient-to-r hover:from-gray-100 hover:to-gray-200">Get it now!</button>
+        <p><ion-icon class="text-yellow-500" name="clipboard-outline"></ion-icon>&nbsp;&nbsp;30 Day Money Back Guarantee</p>
+      </div>
+
+    </div>
+    <div class="max-lg:w-[100%] w-[100%]">
+      <img src="./images/Group 37178.png" alt="">
+    </div>
+
   </div>
 
 
@@ -188,10 +322,13 @@
 
 
 
-
-
-
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
+
     const navLinks = document.querySelector('.nav-links')
     function onToggleMenu(e) {
       e.name = e.name === 'menu' ? 'close' : 'menu'
